@@ -1,0 +1,39 @@
+# .NET
+*.dll
+*.exe
+*.log
+*.obj
+*.bin
+*.app
+*.vspscc
+*.vssscc
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build directories
+bin/
+obj/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# DotNet user secrets
+secrets.json
+
+# Publish output
+publish/
+
+# Roslyn generated files
+*.g.cs
+*.g.i.cs
+*.g.br
+*.g.i.br
