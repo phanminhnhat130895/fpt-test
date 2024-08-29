@@ -105,7 +105,9 @@ namespace AutoDrivingCarSimulation.Application.Services
                     break;
             }
 
-            return int.TryParse(inputArr[0], out x) && int.TryParse(inputArr[1], out y);
+            var isValid = int.TryParse(inputArr[0], out x) && x >= 0 && int.TryParse(inputArr[1], out y) && y >= 0;
+
+            return isValid;
         }
 
         private string CreateCommand(string carName)

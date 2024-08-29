@@ -33,7 +33,9 @@ namespace AutoDrivingCarSimulation.Application.Services
 
             if (fieldData.Length != 2) return false;
 
-            return int.TryParse(fieldData[0], out x) && int.TryParse(fieldData[1], out y);
+            var isValid = int.TryParse(fieldData[0], out x) && x > 0 && int.TryParse(fieldData[1], out y) && y > 0;
+
+            return isValid;
         }
     }
 }
