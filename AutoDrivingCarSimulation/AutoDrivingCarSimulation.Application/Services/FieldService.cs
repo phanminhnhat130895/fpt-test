@@ -1,5 +1,5 @@
 ﻿using AutoDrivingCarSimulation.Application.Services.Interfaces;
-using AutoDrivingCarSimulation.Domain.Entities;
+using AutoDrivingCarSimulation.Core.Entities;
 
 namespace AutoDrivingCarSimulation.Application.Services
 {

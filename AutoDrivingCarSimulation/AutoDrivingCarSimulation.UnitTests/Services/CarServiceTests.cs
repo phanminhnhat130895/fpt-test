@@ -1,8 +1,8 @@
 ﻿using AutoDrivingCarSimulation.Application.Commands.AddCar;
 using AutoDrivingCarSimulation.Application.Queries.GetCars;
 using AutoDrivingCarSimulation.Application.Services;
-using AutoDrivingCarSimulation.Domain.Common.Enums;
-using AutoDrivingCarSimulation.Domain.Entities;
+using AutoDrivingCarSimulation.Core.Common.Enums;
+using AutoDrivingCarSimulation.Core.Entities;
 using MediatR;
 using Moq;
 

@@ -1,6 +1,6 @@
 ﻿using AutoDrivingCarSimulation.Application.Commands.MarkCarCannotMove;
 using AutoDrivingCarSimulation.Application.Commands.MoveForward;
-using AutoDrivingCarSimulation.Domain.Entities;
+using AutoDrivingCarSimulation.Core.Entities;
 using FluentValidation.TestHelper;
 
 namespace AutoDrivingCarSimulation.UnitTests.Commands.MoveForward

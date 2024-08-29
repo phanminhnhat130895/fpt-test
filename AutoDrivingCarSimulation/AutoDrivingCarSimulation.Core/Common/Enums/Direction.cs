@@ -1,4 +1,4 @@
-﻿namespace AutoDrivingCarSimulation.Domain.Common.Enums
+﻿namespace AutoDrivingCarSimulation.Core.Common.Enums
 {
     public enum Direction
     {

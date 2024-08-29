@@ -1,6 +1,6 @@
 ﻿using AutoDrivingCarSimulation.Application.Commands.AddCar;
-using AutoDrivingCarSimulation.Domain.Common.Enums;
-using AutoDrivingCarSimulation.Domain.Entities;
+using AutoDrivingCarSimulation.Core.Common.Enums;
+using AutoDrivingCarSimulation.Core.Entities;
 using FluentValidation.TestHelper;
 
 namespace AutoDrivingCarSimulation.UnitTests.Commands.AddCar

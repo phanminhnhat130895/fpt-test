@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoDrivingCarSimulation.Domain\AutoDrivingCarSimulation.Core.csproj" />
+    <ProjectReference Include="..\AutoDrivingCarSimulation.Core\AutoDrivingCarSimulation.Core.csproj" />
   </ItemGroup>
 
 </Project>

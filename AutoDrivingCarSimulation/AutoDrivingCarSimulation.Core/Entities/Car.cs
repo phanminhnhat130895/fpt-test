@@ -1,6 +1,6 @@
-﻿using AutoDrivingCarSimulation.Domain.Common.Enums;
+﻿using AutoDrivingCarSimulation.Core.Common.Enums;
 
-namespace AutoDrivingCarSimulation.Domain.Entities
+namespace AutoDrivingCarSimulation.Core.Entities
 {
     public class Car
     {

@@ -1,4 +1,4 @@
-﻿namespace AutoDrivingCarSimulation.Domain.Entities
+﻿namespace AutoDrivingCarSimulation.Core.Entities
 {
     public class Field
     {

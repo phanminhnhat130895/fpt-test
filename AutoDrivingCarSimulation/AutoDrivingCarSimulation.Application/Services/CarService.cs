@@ -2,8 +2,8 @@
 using AutoDrivingCarSimulation.Application.Queries.GetCarByName;
 using AutoDrivingCarSimulation.Application.Queries.GetCars;
 using AutoDrivingCarSimulation.Application.Services.Interfaces;
-using AutoDrivingCarSimulation.Domain.Common.Enums;
-using AutoDrivingCarSimulation.Domain.Entities;
+using AutoDrivingCarSimulation.Core.Common.Enums;
+using AutoDrivingCarSimulation.Core.Entities;
 using MediatR;
 using System.Text.RegularExpressions;
 
@@ -128,10 +128,10 @@ namespace AutoDrivingCarSimulation.Application.Services
             Regex sWhitespace = new Regex(@"\s+");
             sWhitespace.Replace(command, string.Empty);
 
-            var validCommand = new string[3] { "F", "L", "R" };
-            var commandArr = command.Split("");
+            var validCommand = new char[3] { 'F', 'L', 'R' };
+            var commandArr = command.ToCharArray();
 
-            return !commandArr.Any(c => validCommand.Contains(c));
+            return commandArr.All(c => validCommand.Contains(c));
         }
     }
 }

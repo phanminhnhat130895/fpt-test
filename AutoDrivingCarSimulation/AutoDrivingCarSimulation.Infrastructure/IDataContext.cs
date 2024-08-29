@@ -1,4 +1,4 @@
-﻿using AutoDrivingCarSimulation.Domain.Entities;
+﻿using AutoDrivingCarSimulation.Core.Entities;
 
 namespace AutoDrivingCarSimulation.Infrastructure
 {

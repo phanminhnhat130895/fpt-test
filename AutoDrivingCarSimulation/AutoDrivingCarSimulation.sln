@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDrivingCarSimulation", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDrivingCarSimulation.Application", "AutoDrivingCarSimulation.Application\AutoDrivingCarSimulation.Application.csproj", "{D890D539-332B-4289-A04F-ED941C46FEB3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDrivingCarSimulation.Core", "AutoDrivingCarSimulation.Domain\AutoDrivingCarSimulation.Core.csproj", "{33A6FBE1-D628-486C-9E00-A9C38AD2AE44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDrivingCarSimulation.Core", "AutoDrivingCarSimulation.Core\AutoDrivingCarSimulation.Core.csproj", "{33A6FBE1-D628-486C-9E00-A9C38AD2AE44}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoDrivingCarSimulation.Infrastructure", "AutoDrivingCarSimulation.Infrastructure\AutoDrivingCarSimulation.Infrastructure.csproj", "{A2E78E30-3F3C-440C-AC72-0A5E32C50ED9}"
 EndProject

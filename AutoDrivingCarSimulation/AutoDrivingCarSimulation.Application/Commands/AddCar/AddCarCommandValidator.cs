@@ -19,10 +19,10 @@ namespace AutoDrivingCarSimulation.Application.Commands.AddCar
                             Regex sWhitespace = new Regex(@"\s+");
                             sWhitespace.Replace(v, string.Empty);
 
-                            var validCommand = new string[3] { "F", "L", "R" };
-                            var commandArr = v.Split("");
+                            var validCommand = new char[3] { 'F', 'L', 'R' };
+                            var commandArr = v.ToCharArray();
 
-                            return !commandArr.Any(c => validCommand.Contains(c));
+                            return commandArr.All(c => validCommand.Contains(c));
                         }).WithMessage("Command is invalid");
                 });
         }
