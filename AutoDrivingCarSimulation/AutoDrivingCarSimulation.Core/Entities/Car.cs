@@ -26,17 +26,15 @@ namespace AutoDrivingCarSimulation.Core.Entities
         {
             Direction current = Facing;
             Facing = (Direction)(((int)Facing + 3) % 4);
-            MoveForward(field, current);
         }
 
         public virtual void RotateRight(Field field)
         {
             Direction current = Facing;
             Facing = (Direction)(((int)Facing + 1) % 4);
-            MoveForward(field, current);
         }
 
-        public virtual void MoveForward(Field field, Direction? currentDirection = null)
+        public virtual void MoveForward(Field field)
         {
             int newX = X, newY = Y;
 
@@ -56,10 +54,6 @@ namespace AutoDrivingCarSimulation.Core.Entities
             }
             else
             {
-                if (currentDirection != null)
-                {
-                    Facing = currentDirection.Value;
-                }
                 CanMove = false;
             }
         }

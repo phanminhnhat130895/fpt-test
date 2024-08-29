@@ -95,31 +95,35 @@ namespace AutoDrivingCarSimulation.Application.Services
             if (command == 'L')
             {
                 Facing = (Direction)(((int)car.Facing + 3) % 4);
+                return true;
             }
             else if (command == 'R')
             {
                 Facing = (Direction)(((int)car.Facing + 1) % 4);
-            }
-
-            int newX = car.X, newY = car.Y;
-
-            switch (Facing)
-            {
-                case Direction.N: newY++; break;
-                case Direction.E: newX++; break;
-                case Direction.S: newY--; break;
-                case Direction.W: newX--; break;
-            }
-
-            // Ensure the car stays within the field boundaries
-            if (field.IsWithinBounds(newX, newY))
-            {
                 return true;
             }
+            else
+            {
+                int newX = car.X, newY = car.Y;
 
-            car.CanMove = false;
-            await mediator.Send(new MarkCarCannotMoveCommand(car.Name, "", 0));
-            return false;
+                switch (Facing)
+                {
+                    case Direction.N: newY++; break;
+                    case Direction.E: newX++; break;
+                    case Direction.S: newY--; break;
+                    case Direction.W: newX--; break;
+                }
+
+                // Ensure the car stays within the field boundaries
+                if (field.IsWithinBounds(newX, newY))
+                {
+                    return true;
+                }
+
+                car.CanMove = false;
+                await mediator.Send(new MarkCarCannotMoveCommand(car.Name, "", 0));
+                return false;
+            }
         }
 
         private async Task EndProcess(IMediator mediator)
